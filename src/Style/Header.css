@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+header{
+    width: 100%;
+    font-family: 'Roboto';
+    position: absolute;
+}
+nav{
+    display: flex;
+    height: 3em;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    margin-left: 1rem;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #181818;
+}
+.ul-items{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.ul-items li{
+    margin-right: 1rem;
+}
+.ul-items li a{
+    color: #181818;
+    text-decoration: none;
+}
+.ul-items li a:hover{
+    border-bottom: 1px solid #181818;
+}
+/*---HM MENU*/
+.h-menu{
+    display: flex;
+    display: none;
+}
+.h-menu .menu{
+    font-size: 24px;
+    cursor: pointer;
+    color: #181818;
+}
+.openbtn { 
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    cursor: pointer;
+    color: #181818;
+    
+  }
+.h-menu{
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  .slider .x a{
+      text-decoration: none;
+      color: white;
+  }
+  .slider .x{
+      list-style: none;
+      margin-left: 10px;
+      font-size: 25px;
+      cursor: pointer;
+  }
+  .slider {
+      
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.616);
+    top: 0;
+    z-index: 1;
+    right: -100%;
+    transition: 1s ease;
+}
+.slider .slider-ul {
+    display: grid;
+    list-style: none;
+    text-align: center;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 auto;
+}
+.slider-ul li {
+    padding: 20px;
+}
+.slider-ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;    
+}
+.slider.active {
+    right: 0;
+    transition: 1s ease;
+}
+
+
+@media (max-width:600px) {
+    header{
+        width: 100%;   
+    }
+    .logo h1{
+        font-size: 18px;
+    }
+    .ul-items{
+        font-size: 14px;
+     
+    }
+    .ul-items{
+        display: none;
+    }
+    .h-menu{
+        display: flex;
+        margin-left: 10rem;
+    }
+    .h-menu .menu{
+        display: block;
+    }
+    @media(max-width:400px){
+
+    }
+}
